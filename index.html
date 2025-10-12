@@ -212,6 +212,71 @@ h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
   font-size: 1.02rem;
   line-height: 1.6;
 }
+/* === CAREER SUMMARY REIMAGINED === */
+.career-highlight {
+  background: linear-gradient(180deg, #f7f9fc 0%, #eaf0f9 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+  padding: 48px 40px;
+}
+
+.summary-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.summary-text p {
+  color: #1b2233;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.summary-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #10203b;
+}
+
+.summary-side blockquote {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  color: #2a3b55;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.summary-edu {
+  background: var(--navy);
+  color: #f0f4ff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+.summary-edu strong {
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+.summary-edu em {
+  color: #a4c2ff;
+  font-style: normal;
+}
+.summary-edu p {
+  color: #d8dbe0;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .summary-layout {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 </style>
@@ -270,15 +335,37 @@ h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
 </section>
 
 <!-- CAREER SUMMARY -->
-<section id="summary" class="section">
-  <h2>Career Summary</h2>
-  <div class="intro-box">
-    <p>As a dedicated Program Manager with over a decade of experience, I specialize in transforming complex business challenges into streamlined, data-driven solutions. My expertise lies at the intersection of ERP systems implementation, supply chain optimization, and operational excellence.</p>
-    <p>What drives me is the opportunity to bridge technology and business strategy. I thrive on building transparent, cross-functional partnerships that transform data into actionable insights and sustainable growth.</p>
-    <p>Currently pursuing a Bachelor of Science in Computer Information Systems with a concentration in Data Analytics at Texas A&amp;M University–Central Texas, I'm deepening my capabilities in predictive analysis and data-driven decision-making.</p>
+<section id="summary" class="section career-highlight" role="region" aria-labelledby="h-summary">
+  <h2 id="h-summary">Career Summary</h2>
+
+  <div class="summary-layout">
+    <div class="summary-text">
+      <p class="summary-lead">
+        I design clarity. As a Program Manager with over ten years of experience, I turn complex systems into
+        clean, human-centered operations that actually make sense.
+      </p>
+      <p>
+        My work lives where data meets people. Whether it’s leading ERP transformations or untangling supply chains,
+        I focus on connecting the details — process, metrics, communication — into a structure that lets teams think, build, and breathe.
+      </p>
+    </div>
+
+    <aside class="summary-side">
+      <blockquote>
+        <p>“The goal isn’t just efficiency. It’s flow — that moment when information, tools, and people move in sync.”</p>
+      </blockquote>
+      <div class="summary-edu">
+        <strong>B.S. in Computer Information Systems</strong><br>
+        <span>Texas A&amp;M University–Central Texas</span><br>
+        <em>Concentration: Data Analytics</em>
+        <p>Currently building deeper skills in predictive analysis and data-driven decision-making to turn insight into action.</p>
+      </div>
+    </aside>
   </div>
 </section>
 
+
+<!-- CAREER GOALS -->
 <!-- CAREER GOALS -->
 <section id="goals" class="section dark-theme" role="region" aria-labelledby="h-goals">
   <h2 id="h-goals">Career Goals</h2>
@@ -312,7 +399,7 @@ h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
       <p>Keep growing in my career while staying grounded in what matters most—my son, my family, and resilience.</p>
     </div>
     <div class="card goal-card">
-      <h4>🌿 Keep it Curious</h4>
+      <h4>🌿 Stay Curious (and a Little Weird)</h4>
       <p>Keep exploring new ideas, tech, and people that make me say "wait, can we actually do that?" Curiosity builds cooler things and better stories.</p>
     </div>
   </div>
