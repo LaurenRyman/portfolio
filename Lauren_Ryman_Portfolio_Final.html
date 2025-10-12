@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    body {background-color: #f6f9fb}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Tahoma; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Tahoma; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 18.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"/&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;Lauren Ryman - Career Portfolio&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= THEME ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--navy:#162236;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--blue:#2a7fc7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--ink:#111319;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--muted:#495568;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--line:#c9d3e3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--paper:#f3f6fb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--card:#ffffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= BASE ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>*{ box-sizing:border-box; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>html,body{ margin:0; padding:0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--ink);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--paper);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>line-height:1.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.container{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>max-width:1200px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin:0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 6px 30px rgba(0,0,0,.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= HEADER ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.header{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:linear-gradient(135deg,var(--navy) 0%,#243449 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:56px 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>grid-template-columns:260px 1fr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gap:36px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom:4px solid var(--blue);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.profile-photo{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width:260px; height:260px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:6px solid #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>object-fit:cover;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 16px 36px rgba(0,0,0,.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#243449;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.header h1{ margin:0 0 8px 0; font-size:42px; line-height:1.2; color:#fff; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tagline{ margin:0 0 14px 0; font-size:18px; color:#dbe6f6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.contact-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.btn{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:10px 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-decoration:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>transition:transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.btn--ghost{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:rgba(255,255,255,.12);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:1px solid rgba(255,255,255,.28);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.btn--ghost:hover{ transform:translateY(-2px); background:rgba(255,255,255,.2); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.btn--primary{ background:var(--blue); color:#fff; border:1px solid #216ea9; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.btn--primary:hover{ transform:translateY(-2px); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= NAV ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>position:sticky; top:0; z-index:100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--navy);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom:3px solid #223046;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:flex; flex-wrap:wrap; justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 4px 14px rgba(0,0,0,.18);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav button{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:transparent; border:0; color:#e9f1fb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:16px 20px; cursor:pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:15px; font-weight:600; letter-spacing:.2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom:3px solid transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>transition:background .2s ease, border-color .2s ease, color .2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav button:hover{ background:#243449; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.nav button.active{ background:#243449; border-bottom-color:var(--blue); color:#fff; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= CONTENT ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.content{ padding:44px 40px; max-width:1100px; margin:0 auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.section{ display:none; animation:fadeIn .25s ease; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.section.active{ display:block; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@keyframes fadeIn{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;} }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>h2{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:28px; color:var(--navy);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin:0 0 18px 0; padding-bottom:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom:4px solid var(--blue);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>h3{ font-size:20px; color:#2a3443; margin:20px 0 10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.muted{ color:var(--muted); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.intro-box{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#eaf1fb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:1px solid #bcd0ea;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-left:5px solid var(--blue);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:18px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin:10px 0 22px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#fff; border:1.5px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:10px; padding:16px 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 2px 8px rgba(10,20,40,.05);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.grid{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:grid; gap:16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>grid-template-columns:repeat(auto-fit, minmax(280px,1fr));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* Skills row */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.row-skill{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:flex; flex-wrap:wrap; gap:8px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>line-height:1.4; font-weight:600; color:#16324b;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.row-skill span{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:4px 8px; border:1px solid #b8cdea;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:6px; background:#e8f1fb; font-size:13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* Skills &amp; Goals cards (reuse) */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skills-grid{ display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); margin:30px 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skill-card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#fff; padding:25px; border-radius:8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:1px solid #e0e0e0; border-left:4px solid #3498db;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 2px 5px rgba(0,0,0,0.05); transition:transform .2s ease, box-shadow .2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skill-card:hover{ transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skill-card h4{ color:#2c3e50; font-size:1.2em; margin-bottom:10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.skill-card p{ color:#555; font-size:.95em; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.goal-card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:linear-gradient(135deg,#2c3e50 0%,#34495e 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#fff; padding:25px; border-radius:8px; margin-bottom:20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 4px 10px rgba(0,0,0,.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.goal-card h4{ font-size:1.3em; margin-bottom:10px; color:#fff; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.goal-card p{ color:#e0e0e0; line-height:1.7; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= TIMELINE ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.timeline{ position:relative; padding-left:32px; margin-top:6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.timeline::before{ content:""; position:absolute; left:8px; top:0; bottom:0; width:3px; background:var(--blue); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.titem{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>position:relative; margin:16px 0; padding:14px 16px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:1.5px solid var(--line); border-radius:10px; background:#f8fbff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.titem::before{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>content:""; position:absolute; left:-7px; top:16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width:14px; height:14px; background:var(--blue);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:3px solid #fff; border-radius:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 0 0 3px var(--blue);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.trole{ font-size:18px; color:#2a3443; margin:0 0 2px 0; font-weight:700; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tmeta{ color:var(--muted); font-weight:600; margin-bottom:6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tbul{ list-style:none; padding-left:0; margin:6px 0 0 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tbul li{ position:relative; padding-left:16px; margin:6px 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tbul li::before{ content:"▸"; position:absolute; left:0; color:var(--blue); font-weight:700; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= CERT/IMAGES ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.certificate-img{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width:100%; max-width:820px; height:auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:10px; border:2px solid var(--line);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 6px 18px rgba(10,20,40,.10); background:#e7eef7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= FOOTER ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.footer{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--navy); color:#e9f1fb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center; padding:26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-top:3px solid #223046;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= PRINT ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@page{ size:Letter; margin:0.6in; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media print{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>*{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>-webkit-print-color-adjust:exact !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>print-color-adjust:exact !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color-adjust:exact !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>forced-color-adjust:none !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>animation:none !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition:none !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.nav, .print-button{ display:none !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body{ background:#ffffff !important; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:#162236 !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-bottom:4px solid #2a7fc7 !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h2{ border-bottom:4px solid #2a7fc7 !important; color:#0e1623 !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.intro-box{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:#e1ebf8 !important; border-color:#99b8e2 !important; border-left:5px solid #2a7fc7 !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card{ border:1.5px solid #9fb4d3 !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.timeline::before{ background:#2a7fc7 !important; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Show sections and allow multi-page flow */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:block !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>break-inside:auto !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>page-break-inside:auto !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>break-before:page;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>page-break-before:always;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.section:first-of-type{ break-before:auto; page-break-before:auto; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card, .intro-box, .titem, .certificate-container, .goal-card, .skill-card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>break-inside:avoid !important; page-break-inside:avoid !important;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#work-samples .certificate-container{ break-after:page; page-break-after:always; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#letters .certificate-container{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>break-before:page; break-after:page;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>page-break-before:always; page-break-after:always;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>a, a.muted{ color:#0b63c3 !important; text-decoration:underline !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* ========= RESPONSIVE ========= */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media (max-width:860px){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.header{ grid-template-columns:1fr; text-align:center; justify-items:center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.profile-photo{ width:190px; height:190px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ========= HEADER ========= --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>src="https://i.imgur.com/Vnf5JDT.jpg"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>alt="Lauren Ryman — Professional Headshot"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>class="profile-photo"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>onerror="this.style.display='none'"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Lauren Ryman&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="tagline"&gt;Program Manager • ERP Specialist • Supply Chain Optimization&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="contact-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn--ghost" href="mailto:rymanlm@gmail.com"&gt;📧 rymanlm@gmail.com&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn--primary" href="https://www.linkedin.com/in/laurenryman" target="_blank" rel="noopener"&gt;💼 LinkedIn&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="btn btn--ghost" aria-hidden="true"&gt;📍 Austin, TX&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ========= NAV ========= --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="nav" aria-label="Section navigation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="active" onclick="showSection('summary')"&gt;Career Summary&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('goals')"&gt;Career Goals&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('philosophy')"&gt;Philosophy&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('skills')"&gt;Skills&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('experience')"&gt;Experience&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('education')"&gt;Education&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('certs')"&gt;Certifications&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('work-samples')"&gt;Work Samples&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('references')"&gt;References&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('letters')"&gt;Letters&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ========= CONTENT ========= --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="content"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- SUMMARY --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="summary" class="section active" role="region" aria-labelledby="h-summary"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-summary"&gt;Career Summary&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="intro-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;As a dedicated Program Manager with over a decade of experience, I specialize in transforming complex business challenges into streamlined, data-driven solutions. My expertise lies at the intersection of ERP systems implementation, supply chain optimization, and operational excellence.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;What drives me is the opportunity to bridge technology and business strategy. I thrive on building transparent, cross-functional partnerships that transform data into actionable insights and sustainable growth. Whether launching new processes or stabilizing operations during periods of change, I focus on creating operational resilience that delivers lasting value.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;Currently pursuing a Bachelor of Science in Computer Information Systems with a concentration in Data Analytics at Texas A&amp;amp;M University–Central Texas, I'm deepening my capabilities in predictive analysis and data-driven decision-making to help organizations innovate and optimize for the future.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- GOALS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="goals" class="section" role="region" aria-labelledby="h-goals"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-goals"&gt;Career Goals&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="muted" style="margin-bottom:18px;"&gt;Leveraging technology and analytics to drive transformational change in operations and supply chain.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="goal-card"&gt;&lt;h4&gt;🎯 Senior Leadership in ERP Transformation&lt;/h4&gt;&lt;p&gt;Advance to a Director-level role leading enterprise-wide ERP modernization integrating AI/ML into workflows.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="goal-card"&gt;&lt;h4&gt;🎯 Thought Leadership &amp; Industry Influence&lt;/h4&gt;&lt;p&gt;Publish insights, speak at conferences, and mentor on supply chain optimization and data-driven operations.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="goal-card"&gt;&lt;h4&gt;🎯 Data Analytics Center of Excellence&lt;/h4&gt;&lt;p&gt;Build predictive capabilities for inventory, demand forecasting, and decision support.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="goal-card"&gt;&lt;h4&gt;🎯 Advanced Technical Education&lt;/h4&gt;&lt;p&gt;Complete B.S. with honors; pursue specialized certifications in analytics and leadership.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="goal-card"&gt;&lt;h4&gt;🎯 Sustainable Operations Innovation&lt;/h4&gt;&lt;p&gt;Embed sustainability metrics and green supply chain principles into operational frameworks.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- PHILOSOPHY --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="philosophy" class="section" role="region" aria-labelledby="h-phil"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-phil"&gt;Professional Philosophy&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="intro-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Data-Driven Excellence with Human-Centered Leadership&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;Technology is maximized by empowered people. I translate complex ERP and supply chain data into clear narratives that drive action, emphasizing transparent communication, shared accountability, and scalable processes.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="skill-card"&gt;&lt;h4&gt;🔍 Transparency Builds Trust&lt;/h4&gt;&lt;p&gt;Dashboards and KPIs that are accessible and decision-ready across levels.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="skill-card"&gt;&lt;h4&gt;🤝 Collaboration Over Silos&lt;/h4&gt;&lt;p&gt;Engineering, Planning, Quality, Finance aligned around shared outcomes.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="skill-card"&gt;&lt;h4&gt;📊 Measure What Matters&lt;/h4&gt;&lt;p&gt;OTD, PPV, inventory turns, schedule adherence tied to ownership and action.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="skill-card"&gt;&lt;h4&gt;🔄 Continuous Improvement&lt;/h4&gt;&lt;p&gt;RCCA embedded into standard work to convert insights into durable gains.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="skill-card"&gt;&lt;h4&gt;⚖️ Balanced Resilience&lt;/h4&gt;&lt;p&gt;Efficiency with flexibility to handle change without losing momentum.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- SKILLS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="skills" class="section" role="region" aria-labelledby="h-skills"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-skills"&gt;Core Skills &amp;amp; Expertise&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="row-skill" aria-label="Skills list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Program Management&lt;/span&gt;&lt;span&gt;ERP System Implementation&lt;/span&gt;&lt;span&gt;Workflow Optimization&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Forecasting &amp;amp; Budgeting&lt;/span&gt;&lt;span&gt;Data-Driven Decision Making&lt;/span&gt;&lt;span&gt;Supply Chain Management&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Inventory Control&lt;/span&gt;&lt;span&gt;Process Improvement&lt;/span&gt;&lt;span&gt;KPI &amp;amp; Dashboard Development&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Root Cause Analysis&lt;/span&gt;&lt;span&gt;Project Coordination&lt;/span&gt;&lt;span&gt;Customer Relationship Management&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Cross-Functional Collaboration&lt;/span&gt;&lt;span&gt;Financial Analysis&lt;/span&gt;&lt;span&gt;Compliance &amp;amp; Standards&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Strategic Planning&lt;/span&gt;&lt;span&gt;Cost Reduction Initiatives&lt;/span&gt;&lt;span&gt;Vendor Management&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Executive Reporting&lt;/span&gt;&lt;span&gt;Operational Efficiency&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- EXPERIENCE --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="experience" class="section" role="region" aria-labelledby="h-exp"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-exp"&gt;Professional Experience&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="timeline"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;article class="titem"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="trole"&gt;Program Manager&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tmeta"&gt;VirTex Enterprises — Oct 2023–Present • Austin, TX / Plano, TX&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="tbul"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Optimized ERP workflows → +15% forecast accuracy; shorter planning cycles.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;$5.7M programs; analysis reduced supply disruptions by 30%.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;KPI/dashboards for schedule adherence, inventory turns, shortages.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;PPV root-cause analysis → +18% cost accuracy.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;article class="titem"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="trole"&gt;Global SyteLine Support Specialist (promoted) • Customer Support Representative&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tmeta"&gt;Specialty Coating Systems — Dec 2021–Oct 2023 • Austin, TX&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="tbul"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;SyteLine optimization → +15% system efficiency.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Production scheduling → −20% delays; +25% OTD.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Supported 100+ accounts; contributed to 110% YoY revenue growth.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;−30% data retrieval time via process improvements.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;article class="titem"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="trole"&gt;Operations Administrative Assistant&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tmeta"&gt;Specialty Coating Systems — Mar 2020–Nov 2021 • Austin, TX&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="tbul"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;ERP-integrated Kanban → −20% inventory costs.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Document control for AS9100, ISO9001, ITAR compliance.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Coordinated AS9100 audits; +30% ERP data accuracy.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;article class="titem"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="trole"&gt;MET Team Project Coordinator&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tmeta"&gt;The Home Depot — Jul 2017–Dec 2019 • Houston, TX&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="tbul"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;98% project completion within target timelines.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;SOPs reduced operational rework by 25%.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;article class="titem"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="trole"&gt;Administrative Service Associate&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tmeta"&gt;Lowe’s Home Improvement — Oct 2016–Jul 2017 • Houston, TX&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="tbul"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Genesis/IBM Sterling OMS → +25% on-time delivery.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;$75K annual savings from efficiency improvements.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- EDUCATION --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="education" class="section" role="region" aria-labelledby="h-edu"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-edu"&gt;Education&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;B.S. in Computer Information Systems &lt;span class="muted"&gt;(Data Analytics)&lt;/span&gt;&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Texas A&amp;amp;M University–Central Texas • Dec 2023–Jul 2026 (expected)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul style="margin:6px 0 0 18px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Database design &amp;amp; management; normalized relational modeling; SQL optimization.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Predictive analytics &amp;amp; BI; systems integration strategy.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Applied ML concepts for operations and decision support.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Associate of Arts in Business Administration&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Austin Community College • Mar 2020–Dec 2022&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul style="margin:6px 0 0 18px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Foundations in management, operations, organizational behavior, strategy.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- CERTIFICATIONS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="certs" class="section" role="region" aria-labelledby="h-certs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-certs"&gt;Certifications&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card" style="text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;img</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>src="https://i.imgur.com/5KsA2ie.jpg"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>alt="Ethical Hacking: Wireless Networks — LinkedIn Learning (June 29, 2025)"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>class="certificate-img"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="muted" style="margin-top:10px;"&gt;LinkedIn Learning • Completed June 29, 2025&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- WORK SAMPLES --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="work-samples" class="section" role="region" aria-labelledby="h-work"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-work"&gt;Projects &amp;amp; Work Samples&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="intro-box" style="margin-bottom:24px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p&gt;Manufacturing Process Dashboard designed and implemented at VirTex Enterprises—integrating ERP data, visualization, and real-time operational intelligence.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="certificate-container card" style="background:#f8fafc; border-color:#d0e3f3; padding:24px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 style="margin-bottom:12px; color:#1a2332;"&gt;Manufacturing Process Dashboard&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="muted" style="margin-bottom:14px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Role:&lt;/strong&gt; Program Manager &amp;amp; Analytics Lead • &lt;strong&gt;Focus:&lt;/strong&gt; Workflow visibility &amp;amp; ERP integration</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;img src="https://i.imgur.com/6oUYlYb.png" alt="Manufacturing Process Dashboard Preview"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">               </span>style="width:100%; max-width:900px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:16px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div style="text-align:left;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4 style="color:#1a2332;"&gt;Business Impact&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul style="padding-left:25px; margin-bottom:12px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;−60% weekly reporting cycle via automation and validation.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Surfaced 47 critical job bottlenecks for proactive resolution.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Unified OTD, shortages, PPV, cost roll status in one view.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4 style="color:#1a2332;"&gt;Technical Implementation&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul style="padding-left:25px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;SQL ETL pipelines from Infor SyteLine to SharePoint Lists.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Automated refresh logic with error handling and QA checks.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;li&gt;Role-based dashboards; mobile-friendly access.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- REFERENCES --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section id="references" class="section" role="region" aria-labelledby="h-refs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 id="h-refs"&gt;Professional References&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Sherry Jolly&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Director of Materials • VirTex Enterprises&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;&lt;a class="muted" href="mailto:Sherry.Jolly@virtex.us"&gt;Sherry.Jolly@virtex.us&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;James Knox&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Director of Sales • Specialty Coating Systems Americas&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;&lt;a class="muted" href="mailto:JKnox@scscoatings.com"&gt;JKnox@scscoatings.com&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Jesse Ganz&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;Director of Operations • VirTex Enterprises&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="muted"&gt;&lt;a class="muted" href="mailto:Jesse.Ganz@virtex.us"&gt;Jesse.Ganz@virtex.us&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- LETTERS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="letters" class="section" role="region" aria-labelledby="h-letters" style="padding:44px 40px; max-width:1100px; margin:0 auto;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 id="h-letters"&gt;Letters of Recommendation&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="certificate-container card" style="page-break-after:always; background:#f8fafc; border-color:#d0e3f3; text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://i.imgur.com/1oVEPAH.png" alt="Letter of Recommendation — James Knox"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>style="width:100%; max-width:850px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:12px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="certificate-container card" style="page-break-after:always; background:#f8fafc; border-color:#d0e3f3; text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="margin-bottom:12px; color:#1a2332;"&gt;Manager Feedback — Steve Allen&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://i.imgur.com/8jqwLrk.png" alt="Manager Feedback — Steve Allen"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>style="width:100%; max-width:850px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:12px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- FOOTER --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="footer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Lauren Ryman&lt;/strong&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Program Manager • ERP Specialist • Supply Chain Optimization&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p style="margin-top:8px;"&gt;📧 &lt;a href="mailto:rymanlm@gmail.com" style="color:#fff; text-decoration:underline;"&gt;rymanlm@gmail.com&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&amp;nbsp;|&amp;nbsp; 💼 &lt;a href="https://www.linkedin.com/in/laurenryman" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;"&gt;linkedin.com/in/laurenryman&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&amp;nbsp;|&amp;nbsp; 📍 Austin, TX&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="muted" style="margin-top:8px;"&gt;© 2025&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- PRINT BUTTON (screen only) --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="btn btn--primary print-button" onclick="window.print()"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>style="position:fixed; right:22px; bottom:22px; z-index:999;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>🖨️ Print / Save as PDF</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Tab switcher</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function showSection(sectionId){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.section').forEach(s =&gt; s.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const tgt = document.getElementById(sectionId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (tgt) tgt.classList.add('active');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>document.querySelectorAll('.nav button').forEach(b =&gt; b.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const btn = Array.from(document.querySelectorAll('.nav button'))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.find(b =&gt; (b.textContent || b.innerText).toLowerCase().includes(sectionId));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (btn) btn.classList.add('active');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>window.scrollTo({ top:0, behavior:'smooth' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
