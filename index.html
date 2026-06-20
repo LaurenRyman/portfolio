@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Lauren Ryman - Career Portfolio</title>
+<title>Lauren Ryman - Technical Portfolio</title>
+<link rel="stylesheet" href="ex8.css"/>
 <style>
 :root{
   --navy:#162236;
@@ -16,293 +17,149 @@
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
-body{
-  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
-  color:var(--ink);
-  background:var(--paper);
-  line-height:1.6;
-}
-.container{
-  max-width:1200px;
-  margin:0 auto;
-  background:var(--card);
-  box-shadow:0 6px 30px rgba(0,0,0,.08);
-}
+body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;}
+.container{max-width:1200px;margin:0 auto;background:var(--card);box-shadow:0 6px 30px rgba(0,0,0,.08);}
 .header{
-  background:linear-gradient(135deg,var(--navy) 0%,#243449 100%);
-  color:#fff;
-  padding:56px 40px;
-  display:grid;
-  grid-template-columns:260px 1fr;
-  gap:36px;
-  align-items:center;
+  background:linear-gradient(135deg,#0d1118 0%,#162236 60%,#1e3a5f 100%);
+  color:#fff;padding:56px 40px;
+  display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center;
   border-bottom:4px solid var(--blue);
 }
-.profile-photo{
-  width:260px;height:260px;border-radius:50%;
-  border:6px solid #fff;object-fit:cover;
-  box-shadow:0 16px 36px rgba(0,0,0,.35);
-}
-.header h1{margin:0 0 8px;font-size:42px;}
-.tagline{margin:0 0 14px;font-size:18px;color:#dbe6f6;}
-.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;}
-.btn{
-  display:inline-block;padding:10px 14px;border-radius:8px;
-  text-decoration:none;font-weight:600;font-size:14px;
-  transition:transform .15s ease,background .2s ease,color .2s ease,border-color .2s ease;
-}
-.btn--ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.28);}
-.btn--ghost:hover{transform:translateY(-2px);background:rgba(255,255,255,.2);}
+.profile-photo{width:260px;height:260px;border-radius:50%;border:4px solid #2a7fc7;object-fit:cover;box-shadow:0 16px 36px rgba(0,0,0,.5);}
+.header h1{margin:0 0 6px;font-size:40px;letter-spacing:1px;}
+.tagline{margin:0 0 6px;font-size:15px;color:#a4c2ff;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
+.tag-stack{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 14px;}
+.tag{background:rgba(42,127,199,0.18);border:1px solid rgba(42,127,199,0.4);color:#a4c2ff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;}
+.btn{display:inline-block;padding:9px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;transition:transform .15s ease,background .2s ease;}
+.btn--ghost{background:rgba(255,255,255,.08);color:#e0eaf8;border:1px solid rgba(255,255,255,.2);}
+.btn--ghost:hover{transform:translateY(-2px);background:rgba(255,255,255,.14);}
 .btn--primary{background:var(--blue);color:#fff;border:1px solid #216ea9;}
 .btn--primary:hover{transform:translateY(-2px);}
-.nav{
-  position:sticky;top:0;z-index:100;
-  background:var(--navy);border-bottom:3px solid #223046;
-  display:flex;flex-wrap:wrap;justify-content:center;
-  box-shadow:0 4px 14px rgba(0,0,0,.18);
-}
-.nav button{
-  background:transparent;border:0;color:#e9f1fb;
-  padding:16px 20px;cursor:pointer;
-  font-size:15px;font-weight:600;
-  border-bottom:3px solid transparent;
-  transition:background .2s ease,border-color .2s ease,color .2s ease;
-}
-.nav button:hover{background:#243449;}
-.nav button.active{background:#243449;border-bottom-color:var(--blue);color:#fff;}
+.nav{position:sticky;top:0;z-index:100;background:#0d1118;border-bottom:2px solid #1e3a5f;display:flex;flex-wrap:wrap;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.nav button{background:transparent;border:0;color:#8da8c8;padding:15px 18px;cursor:pointer;font-size:14px;font-weight:600;border-bottom:3px solid transparent;transition:all .2s ease;letter-spacing:.5px;}
+.nav button:hover{background:#1a1f28;color:#e0eaf8;}
+.nav button.active{background:#1a1f28;border-bottom-color:var(--blue);color:#fff;}
 .content{padding:44px 40px;max-width:1100px;margin:0 auto;}
 .section{display:none;opacity:0;visibility:hidden;transition:opacity .4s ease,visibility .4s ease;}
 .section.active{display:block;opacity:1;visibility:visible;}
-h2{font-size:28px;color:var(--navy);margin:0 0 18px;padding-bottom:10px;border-bottom:4px solid var(--blue);}
-h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
+h2{font-size:26px;color:var(--navy);margin:0 0 18px;padding-bottom:10px;border-bottom:3px solid var(--blue);}
+h3{font-size:19px;color:#2a3443;margin:20px 0 10px;}
 .muted{color:var(--muted);}
-.intro-box{
-  background:#eaf1fb;border:1px solid #bcd0ea;
-  border-left:5px solid var(--blue);border-radius:10px;
-  padding:18px 20px;margin:10px 0 22px;
-}
-.card{
-  background:#fff;border:1.5px solid var(--line);
-  border-radius:10px;padding:16px 18px;
-  box-shadow:0 2px 8px rgba(10,20,40,.05);
-}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(10,20,40,.05);}
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
-.philosophy-dark{
-  background:linear-gradient(180deg,#0d1118 0%,#1a1f28 100%);
-  color:#eaeaea;padding:4rem 2rem;border-radius:16px;
-  box-shadow:0 0 50px rgba(0,0,0,0.4);
-}
-.philosophy-dark h2{text-align:center;color:#f5f7fa;border-bottom:none;margin-bottom:2rem;}
-.philosophy-dark h3{text-align:center;color:#a4c2ff;margin-bottom:1.25rem;}
-.profile-photo-about{
-  display:block;margin:0 auto 2rem;max-width:420px;width:100%;
-  border-radius:14px;box-shadow:0 0 35px rgba(0,0,0,0.6);
-}
-.philosophy-dark .intro-box{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-left:4px solid #4b7fdc;border-radius:10px;
-  padding:20px 24px;margin:20px auto 28px;max-width:900px;
-}
-.philosophy-dark .intro-box p{color:#d8dbe0;line-height:1.8;font-size:1.05rem;}
-.skills-layout{display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start;}
-.experience-column{flex:0 0 78%;min-width:600px;}
-.skills-column{flex:0 0 20%;background:rgba(255,255,255,0.04);padding:1.5rem;border-radius:16px;}
-.skill-card h4{font-size:1.1rem;margin-bottom:.6rem;}
-.skill-card ul{list-style:none;padding-left:0;}
-.skill-card ul li{margin-bottom:.5rem;font-size:.95rem;color:var(--line);}
-.experience-card{background:rgba(255,255,255,0.03);padding:1.5rem;border-radius:16px;margin-bottom:1.5rem;}
-.experience-card h4{margin-bottom:.8rem;color:var(--blue);}
+
+/* DARK SECTION BASE */
+.dark-section{background:linear-gradient(180deg,#0d1118 0%,#1a1f28 100%);color:#eaeaea;border-radius:14px;box-shadow:0 0 40px rgba(0,0,0,.4);padding:3.5rem 2.5rem;}
+.dark-section h2{color:#f5f7fa;border-bottom:2px solid #2a7fc7;margin-bottom:1.8rem;}
+.dark-section h3,.dark-section h4{color:#a4c2ff;}
+.dark-section p,.dark-section li{color:#c8cdd6;line-height:1.75;font-size:1rem;}
+.dark-section .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:18px 22px;box-shadow:0 4px 14px rgba(0,0,0,.2);}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;align-items:start;margin-top:1rem;}
+.about-photo{width:100%;border-radius:12px;box-shadow:0 0 30px rgba(0,0,0,.5);}
+.about-text p{color:#c8cdd6;line-height:1.8;margin-bottom:14px;font-size:1rem;}
+.about-text strong{color:#a4c2ff;}
+
+/* TECH STACK BADGES */
+.tech-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:1rem;}
+.tech-badge{background:rgba(42,127,199,0.15);border:1px solid rgba(42,127,199,0.35);color:#7ab8ff;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;font-family:monospace;}
+
+/* CAREER SUMMARY */
+.summary-layout{display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:start;}
+.summary-text p{color:#1b2233;line-height:1.75;margin-bottom:16px;}
+.summary-lead{font-size:1.1rem;font-weight:600;color:#10203b;}
+.summary-side blockquote{margin:0 0 20px;padding:16px 20px;background:#fff;border-left:4px solid var(--blue);border-radius:8px;color:#2a3b55;font-style:italic;box-shadow:0 4px 10px rgba(0,0,0,.05);}
+.summary-edu{background:var(--navy);color:#f0f4ff;padding:20px 24px;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.2);}
+.summary-edu strong{color:#fff;font-size:1rem;}
+.summary-edu em{color:#a4c2ff;font-style:normal;}
+.summary-edu p{color:#d8dbe0;margin-top:10px;font-size:.9rem;line-height:1.6;}
+.career-highlight{background:linear-gradient(180deg,#f7f9fc 0%,#eaf0f9 100%);border-radius:16px;box-shadow:0 6px 25px rgba(0,0,0,.06);padding:44px 40px;}
+
+/* GOALS */
+.goal-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 22px;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease;}
+.goal-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.3);}
+.goal-card h4{color:#a4c2ff;margin-bottom:8px;font-size:1rem;}
+.goal-card p{color:#c8cdd6;font-size:.97rem;line-height:1.6;}
+
+/* SKILLS */
+.experience-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:1.4rem;border-radius:12px;margin-bottom:1.2rem;}
+.experience-card h3{color:#a4c2ff;margin:0 0 4px;}
+.experience-card .meta{color:#6a7f99;font-size:.88rem;margin-bottom:10px;}
+.experience-card ul{margin:0 0 0 18px;padding:0;}
+.experience-card ul li{color:#c8cdd6;font-size:.95rem;line-height:1.7;}
+.skill-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:1.5rem;}
+.skill-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:18px 20px;}
+.skill-box h4{color:#a4c2ff;font-size:.95rem;margin:0 0 12px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:6px;}
+.skill-box ul{list-style:none;padding:0;margin:0;}
+.skill-box ul li{color:#c8cdd6;font-size:.9rem;line-height:1.9;}
+.skill-box ul li::before{content:"// ";color:#2a7fc7;font-family:monospace;font-weight:700;}
+
+/* EDU */
 .edu-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:20px;align-items:start;margin-bottom:18px;}
 .edu-right .cert-card{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(10,20,40,.05);}
-.resume-card{margin-top:18px;padding:18px;border:1.5px dashed var(--line);border-radius:10px;background:#f8fbff;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-.footer{background:var(--navy);color:#e9f1fb;text-align:center;padding:26px;border-top:3px solid #223046;}
-@media (max-width:900px){.skills-layout{flex-direction:column;}.experience-column,.skills-column{flex:1 1 100%;min-width:100%;}.edu-grid{grid-template-columns:1fr;}}
-@media (max-width:860px){.header{grid-template-columns:1fr;text-align:center;}.profile-photo{width:190px;height:190px;}}
-/* === DARK THEME SECTIONS: Goals + Skills === */
-.section.dark-theme {
-  background: linear-gradient(180deg, #0d1118 0%, #1a1f28 100%);
-  color: #eaeaea;
-  border-radius: 16px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.4);
-  padding: 4rem 2rem;
-}
+.resume-card{margin-top:18px;padding:18px;border:1.5px dashed var(--line);border-radius:10px;background:#f8fbff;text-align:center;}
 
-/* Headings */
-.section.dark-theme h2 {
-  color: #f5f7fa;
-  border-bottom: none;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.section.dark-theme h3,
-.section.dark-theme h4 {
-  color: #a4c2ff;
-}
+/* WORK SAMPLES */
+.project-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:22px;margin-bottom:18px;}
+.project-card h3{color:#a4c2ff;margin:0 0 6px;}
+.project-card .meta{color:#6a7f99;font-size:.88rem;margin-bottom:14px;}
+.project-card img{width:100%;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.3);margin-bottom:14px;}
+.project-card h4{color:#7ab8ff;font-size:.95rem;margin:12px 0 6px;}
+.project-card ul{margin:0 0 0 18px;padding:0;}
+.project-card ul li{color:#c8cdd6;font-size:.93rem;line-height:1.7;}
 
-/* Lists + Text */
-.section.dark-theme p,
-.section.dark-theme ul li {
-  color: #d8dbe0;
-  line-height: 1.75;
-  font-size: 1.05rem;
-}
+/* CSS PROPS */
+.css-props-section{background:#f8fbff;border:1.5px solid var(--line);border-radius:12px;padding:28px 32px;margin-top:12px;}
+.css-props-section h1{font-family:'Times New Roman',Times,serif;color:var(--navy);font-size:2rem;margin:0 0 16px;border-bottom:3px solid var(--blue);padding-bottom:8px;}
+.css-props-section ul{margin:0 0 20px 20px;line-height:2.2;}
+.css-props-section ul li{color:var(--ink);font-size:1rem;}
+.favorite{color:red;font-style:italic;}
 
-/* Cards inside dark section */
-.section.dark-theme .card,
-.section.dark-theme .skills-column {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 20px 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-}
+/* FOOTER */
+.footer{background:#0d1118;color:#8da8c8;text-align:center;padding:28px;border-top:2px solid #1e3a5f;}
+.footer strong{color:#e0eaf8;}
+.footer a{color:#7ab8ff;text-decoration:none;}
 
-/* Resume card inside dark theme */
-.section.dark-theme .resume-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px dashed rgba(255, 255, 255, 0.25);
-  color: #eaeaea;
-}
-.section.dark-theme .resume-card a {
-  color: #7ab8ff;
-}
-
-/* Skill headers */
-.section.dark-theme .skill-card h4 {
-  color: #a4c2ff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 4px;
-  margin-bottom: 10px;
-}
-/* Improve skill list readability */
-.skill-card ul li {
-  color: var(--ink) !important;   /* use main body text color */
-  font-weight: 500;
-  letter-spacing: 0.2px;
-}
-
-.skill-card h4 {
-  color: var(--navy);
-  font-weight: 700;
-}
-/* === GOALS DARK THEME CARDS === */
-.dark-theme .goal-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 20px 24px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.dark-theme .goal-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-}
-
-.dark-theme .goal-card h4 {
-  color: #a4c2ff;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.dark-theme .goal-card p {
-  color: #d8dbe0;
-  font-size: 1.02rem;
-  line-height: 1.6;
-}
-/* === CAREER SUMMARY REIMAGINED === */
-.career-highlight {
-  background: linear-gradient(180deg, #f7f9fc 0%, #eaf0f9 100%);
-  border-radius: 18px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.06);
-  padding: 48px 40px;
-}
-
-.summary-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.summary-text p {
-  color: #1b2233;
-  line-height: 1.75;
-  margin-bottom: 18px;
-}
-
-.summary-lead {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #10203b;
-}
-
-.summary-side blockquote {
-  margin: 0 0 24px;
-  padding: 16px 20px;
-  background: #ffffff;
-  border-left: 4px solid var(--blue);
-  border-radius: 8px;
-  color: #2a3b55;
-  font-style: italic;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.summary-edu {
-  background: var(--navy);
-  color: #f0f4ff;
-  padding: 20px 24px;
-  border-radius: 10px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
-}
-.summary-edu strong {
-  color: #ffffff;
-  font-size: 1.05rem;
-}
-.summary-edu em {
-  color: #a4c2ff;
-  font-style: normal;
-}
-.summary-edu p {
-  color: #d8dbe0;
-  margin-top: 12px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-  .summary-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-
+@media(max-width:900px){.about-grid,.summary-layout,.skill-cols,.edu-grid{grid-template-columns:1fr;}}
+@media(max-width:860px){.header{grid-template-columns:1fr;text-align:center;}.profile-photo{width:170px;height:170px;}}
 </style>
 </head>
 <body>
 <div class="container">
+
+<!-- HEADER -->
 <header class="header">
-  <img src="https://i.imgur.com/Vnf5JDT.jpg" alt="Lauren Ryman — Professional Headshot" class="profile-photo"/>
+  <img src="https://i.imgur.com/Vnf5JDT.jpg" alt="Lauren Ryman" class="profile-photo"/>
   <div>
     <h1>Lauren Ryman</h1>
-    <p class="tagline">Program Manager • ERP Specialist • Supply Chain Optimization</p>
+    <p class="tagline">CSI Technical Consultant &nbsp;|&nbsp; Infor Gold Partner</p>
+    <div class="tag-stack">
+      <span class="tag">CloudSuite Industrial</span>
+      <span class="tag">VB.NET</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Python</span>
+      <span class="tag">BarTender</span>
+      <span class="tag">Factory Track</span>
+      <span class="tag">Infor OS</span>
+      <span class="tag">IDM</span>
+    </div>
     <div class="contact-links">
-      <a class="btn btn--ghost" href="mailto:rymanlm@gmail.com">📧 rymanlm@gmail.com</a>
-      <a class="btn btn--primary" href="https://www.linkedin.com/in/laurenryman" target="_blank">💼 LinkedIn</a>
-      <span class="btn btn--ghost">📍 Austin, TX</span>
+      <a class="btn btn--ghost" href="mailto:rymanlm@gmail.com">&#128231; rymanlm@gmail.com</a>
+      <a class="btn btn--primary" href="https://www.linkedin.com/in/laurenryman" target="_blank">&#128188; LinkedIn</a>
+      <span class="btn btn--ghost">&#128205; Manor, TX</span>
     </div>
   </div>
 </header>
 
+<!-- NAV -->
 <nav class="nav">
   <button class="active" onclick="showSection('about')">About Me</button>
-  <button onclick="showSection('philosophy')">Philosophy</button>
   <button onclick="showSection('summary')">Career Summary</button>
-  <button onclick="showSection('goals')">Career Goals</button>
-  <button onclick="showSection('skills')">Skills & Experience</button>
-  <button onclick="showSection('education')">Education & Certifications</button>
+  <button onclick="showSection('goals')">Goals</button>
+  <button onclick="showSection('skills')">Skills &amp; Experience</button>
+  <button onclick="showSection('education')">Education</button>
   <button onclick="showSection('work-samples')">Work Samples</button>
   <button onclick="showSection('references')">References</button>
   <button onclick="showSection('letters')">Letters</button>
@@ -311,232 +168,269 @@ h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
 <main class="content">
 
 <!-- ABOUT ME -->
-<section id="about" class="section philosophy-dark active">
+<section id="about" class="section dark-section active">
   <h2>About Me</h2>
-  <div class="intro-box">
-    <h3>📸 My “Why”</h3>
-    <img src="https://imgur.com/Fysve65.jpg" alt="Lauren and her son Jamie" class="profile-photo-about">
-    <p>This is my son, <strong>Jamie</strong>, and me. He's the reason I push myself, constantly, and the reason I'm learning it's okay not to have it all together.</p>
-    <p>I'm a full-time mom, a student finishing my bachelor's in <strong>Computer Information Systems</strong>, and a program manager for a mid-sized electronics manufacturing company. Some days I nail one of those roles. Most days, I'm just doing my best across all three. Shonda Rhimes once said that when you're winning in one area, you're probably dropping the ball somewhere else. I've felt that. Hard. But I've also learned that's not failure, it's balance. It is what reality looks like when life doesn't pause for you, or wait for you to catch up.</p>
-    <p>I want Jamie to see me work. Not perfectly, but honestly. I want him to know that loving your family and building something outside of it aren't opposites, they're part of showing up as yourself. I want him to see his mom lead, learn, mess up, and keep going anyway. Because that's what perseverance actually looks like, not some highlight reel, but the real, messy, human effort behind the screen.</p>
-    <p>When I'm not working or studying, I sing. It clears my head and reminds me to breathe. I also read (a lot). Mostly about people, systems, and how we all try to make sense of the chaos. Those habits shape how I lead: I try to stay curious, stay grounded, and remember that behind every process is a person.</p>
-  </div>
-</section>
-<!-- PHILOSOPHY -->
-<section id="philosophy" class="section philosophy-dark">
-  <h2>My Life Philosophy</h2>
-  <div class="intro-box">
-    <h3>🌿 Living by Connection</h3>
-    <p>We can't do this alone, and we're not supposed to. I believe in community, not just the idea of it but the practice of it. If we want a village, we have to <strong>be</strong> the village - at work, at home, and everywhere in between.</p>
-    <p>That means showing up for your team when they're struggling. It means asking for help when you need it. It means celebrating someone else's win like it's your own. It means creating space for others to be human, too.</p>
-    <p>No one gets through life on their own strength. We all need people who see us, support us, and remind us we're not alone in the hard parts. I try to be that person whenever I can, because the support I've received has shaped who I am today.</p>
-    <p>At the end of the day, we're all just people trying to figure it out. The best thing we can do is figure it out together.</p>
+  <div class="about-grid">
+    <div>
+      <img src="https://imgur.com/Fysve65.jpg" alt="Lauren and Jamie" class="about-photo">
+    </div>
+    <div class="about-text">
+      <p>I am a <strong>CSI Technical Consultant at WM Synergy</strong>, an Infor Gold Partner, where I implement and configure CloudSuite Industrial (SyteLine) ERP for manufacturing and distribution clients. My work spans security architecture, label printing, systems integration, VB.NET scripting, and end-user training across multiple concurrent engagements.</p>
+      <p>I hold a <strong>Bachelor of Science in Computer Information Systems</strong> with a Data Analytics concentration from Texas A&amp;M University-Central Texas, graduating Summa Cum Laude and earning the President's List in 2025–2026. Before consulting I spent several years as a Program Manager and SyteLine specialist in electronics manufacturing, which gives me a practical lens on how the systems I configure actually get used on the shop floor.</p>
+      <p>Outside of work I am a full-time mom to <strong>Jamie</strong>, and I have two golden retrievers named Sunday and Moose. I stay curious, I go to live music whenever I can, and I believe the best technical solutions come from people who actually care about the humans using them.</p>
+      <h4>Tech I work with daily:</h4>
+      <div class="tech-grid">
+        <span class="tech-badge">SyteLine / CSI</span>
+        <span class="tech-badge">Factory Track</span>
+        <span class="tech-badge">BarTender</span>
+        <span class="tech-badge">Infor OS</span>
+        <span class="tech-badge">IDM</span>
+        <span class="tech-badge">VB.NET</span>
+        <span class="tech-badge">SQL</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">SSO / SCIM</span>
+        <span class="tech-badge">ION</span>
+        <span class="tech-badge">Power BI</span>
+        <span class="tech-badge">GitHub</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CAREER SUMMARY -->
 <section id="summary" class="section career-highlight" role="region" aria-labelledby="h-summary">
   <h2 id="h-summary">Career Summary</h2>
-
   <div class="summary-layout">
     <div class="summary-text">
-      <p class="summary-lead">
-        I design clarity. With over a decade of experience in Manufacturing & Supply Chain Management, I translate complexity into systems that are intuitive, measurable, and built for people.
-      </p>
-      <p class="summary-lead">
-        My work lives at the crossroads of data, process, and collaboration. I lead ERP transformations and supply chain initiatives that align strategy with execution, turning metrics into movement and structure into opportunity. 
-        The goal is always the same: create an environment where teams can think, build, and deliver without friction.
-      </p>
+      <p class="summary-lead">I implement systems that actually work for the people using them.</p>
+      <p>With over six years of experience spanning ERP implementation, manufacturing operations, and systems integration, I specialize in configuring Infor CloudSuite Industrial for clients who need more than out-of-the-box functionality. I design security group architecture, build BarTender label printing workflows, write VB.NET form scripts, and wire up IDM and Infor OS integrations from the ground up.</p>
+      <p>My background in manufacturing program management means I understand what happens when a configuration decision hits the shop floor. I use that context to ask better questions, catch edge cases earlier, and deliver solutions that hold up past go-live.</p>
     </div>
-
     <aside class="summary-side">
       <blockquote>
-        <p><strong>"The goal is to turn data into information, and information into insight."</strong></p>
-        <p><muted>–Carly Florina</muted></p>
+        <p><strong>"Any sufficiently advanced technology is indistinguishable from magic."</strong></p>
+        <p>– Arthur C. Clarke</p>
       </blockquote>
       <div class="summary-edu">
-        <strong>B.S. in Computer Information Systems</strong><br>
-        <span>Texas A&amp;M University–Central Texas</span><br>
-        <em>Concentration: Data Analytics</em>
-        <p>Currently building deeper skills in predictive analysis and data-driven decision-making to turn insight into action.</p>
+        <strong>B.S. Computer Information Systems</strong><br>
+        <span>Texas A&amp;M University – Central Texas</span><br>
+        <em>Concentration: Data Analytics &nbsp;|&nbsp; 2026</em>
+        <p>Summa Cum Laude &nbsp;|&nbsp; President's List 2025–2026</p>
       </div>
     </aside>
   </div>
 </section>
 
-
-<!-- CAREER GOALS -->
-<!-- CAREER GOALS -->
-<section id="goals" class="section dark-theme" role="region" aria-labelledby="h-goals">
-  <h2 id="h-goals">Career Goals</h2>
-  <p class="muted" style="text-align:center; color:#d8dbe0;">
-    My goals reflect both where I’m headed professionally and who I’m becoming personally.
-  </p>
-
-  <div class="grid" style="margin-top:2rem;">
-    <div class="card goal-card">
-      <h4>🎯 Lead With Impact</h4>
-      <p>Guide ERP and operations transformations that empower people and drive clarity.</p>
+<!-- GOALS -->
+<section id="goals" class="section dark-section" role="region" aria-labelledby="h-goals">
+  <h2 id="h-goals">Goals</h2>
+  <p style="color:#8da8c8;margin-bottom:1.5rem;">Where I am headed technically and personally.</p>
+  <div class="grid">
+    <div class="goal-card">
+      <h4>&#9881; Expand into ION &amp; Integrations</h4>
+      <p>Grow beyond security and label printing into ION, Datalake, and multi-system integrations to deliver deeper value across engagements.</p>
     </div>
-
-    <div class="card goal-card">
-      <h4>📚 Keep Learning Forward</h4>
-      <p>Pursue my Master of Science in Information Systems to expand my understanding of analytics and architecture.</p>
+    <div class="goal-card">
+      <h4>&#128187; Deepen Programming Skills</h4>
+      <p>Continue building in VB.NET, SQL, and Python to write more complex scripts, automate more workflows, and contribute to integration development.</p>
     </div>
-
-    <div class="card goal-card">
-      <h4>🤝 Build Better Teams</h4>
-      <p>Create workplaces built on collaboration, trust, and purpose.</p>
+    <div class="goal-card">
+      <h4>&#128218; Pursue a Master's Degree</h4>
+      <p>Pursue a Master of Science in Information Systems to deepen my foundation in analytics, architecture, and enterprise systems.</p>
     </div>
-
-    <div class="card goal-card">
-      <h4>💙 Give Back What Was Given</h4>
-      <p>As an adopted child, I plan to become a short-term foster parent to give stability where it’s most needed.</p>
+    <div class="goal-card">
+      <h4>&#129309; Build Better Client Relationships</h4>
+      <p>Become the consultant clients ask for by name, not just because I can configure the system, but because I communicate clearly and show up for the hard parts.</p>
     </div>
-
-    <div class="card goal-card">
-      <h4>⚖️ Live in Balance</h4>
-      <p>Keep growing in my career while staying grounded in what matters most: my son, my family, and resilience.</p>
+    <div class="goal-card">
+      <h4>&#9878; Live in Balance</h4>
+      <p>Keep growing in a career I love while staying grounded in what matters most: my son, my family, and doing this sustainably.</p>
     </div>
-    <div class="card goal-card">
-      <h4>🌿 Stay Curious (and a Little Weird)</h4>
-      <p>Keep exploring new ideas, tech, and people that make me say "wait, can we actually do that?" Curiosity builds cooler things and better stories.</p>
+    <div class="goal-card">
+      <h4>&#127807; Give Back</h4>
+      <p>As an adopted child I plan to become a short-term foster parent to give stability where it is most needed.</p>
     </div>
   </div>
 </section>
 
 <!-- SKILLS & EXPERIENCE -->
-<section id="skills" class="section" role="region" aria-labelledby="h-skills">
-
+<section id="skills" class="section dark-section" role="region" aria-labelledby="h-skills">
   <h2 id="h-skills">Skills &amp; Experience</h2>
 
-  <!-- EXPERIENCE TIMELINE -->
-  <div class="grid" style="margin-bottom: 28px;">
-    <div class="card">
-      <h3>Program Manager — VirTex Enterprises</h3>
-      <p class="muted">Austin, TX • 2022–Present</p>
-      <ul style="margin:6px 0 0 18px;">
-        <li>Lead ERP-driven process transformation across multi-site manufacturing operations.</li>
-        <li>Manage high-reliability PCBA programs and develop KPI dashboards improving on-time delivery by 25%.</li>
-        <li>Coordinate cross-functional engineering, operations, and supply chain teams to align schedules and risk mitigation.</li>
+  <div class="experience-card">
+    <h3>CSI Technical Consultant &mdash; WM Synergy</h3>
+    <p class="meta">Infor Gold Partner &nbsp;|&nbsp; Remote &nbsp;|&nbsp; November 2025 – Present</p>
+    <ul>
+      <li>Implement and configure CloudSuite Industrial (SyteLine) ERP across multiple concurrent manufacturing and distribution client engagements.</li>
+      <li>Design security group architecture across operations and finance modules; perform form-level FORM object analysis and audit log review to define granular access controls.</li>
+      <li>Build and deploy BarTender label printing solutions including customer order labels, transfer order labels, and Grainger-format labels; configure Zebra printer drivers and troubleshoot Print Gateway connectivity.</li>
+      <li>Write VB.NET form scripts for Factory Track mobile applications, including WMS item label printing and customer order label workflows.</li>
+      <li>Configure IDM document management, Infor OS portal settings, and SSO / SCIM identity integrations; deliver GovCloud portal and Infor U admin training.</li>
+      <li>Investigate and resolve technical issues including Print Gateway outages, XML control character errors, DMARC / email deliverability failures, and CSI form bugs; coordinate Infor support cases as needed.</li>
+      <li>Build structured admin and end-user training plans and lead training sessions across client organizations at multiple experience levels.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Program Manager &mdash; VirTex Enterprises</h3>
+    <p class="meta">Austin &amp; Plano, TX (Hybrid) &nbsp;|&nbsp; October 2023 – November 2025</p>
+    <ul>
+      <li>Configured and optimized ERP workflows to align with financial, operational, and supply chain objectives; improved forecasting accuracy and reduced planning cycle time by 15%.</li>
+      <li>Led customer-facing program execution for $5.7M in new business awards using ERP data to drive cost savings and production schedule improvements.</li>
+      <li>Developed KPI dashboards and executive reports covering OTD, cost variances, inventory turnover, and material shortages; reduced supply chain disruptions by 30%.</li>
+      <li>Analyzed PPV reports and implemented ERP corrective actions, reducing cost discrepancies by 18%.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Customer Support Rep / Global SyteLine Support Specialist &mdash; Specialty Coating Systems</h3>
+    <p class="meta">Austin, TX &nbsp;|&nbsp; December 2021 – October 2023</p>
+    <ul>
+      <li>Configured and optimized Infor CloudSuite Industrial (SyteLine) ERP workflows; promoted to Global SyteLine Support Specialist. Improved system efficiency by 15% and drove adoption across teams.</li>
+      <li>Managed production schedules within ERP; reduced delivery delays by 20% and increased on-time shipments by 25%.</li>
+      <li>Supported 110% year-over-year revenue growth through improved order accuracy and CRM pipeline management across 100+ accounts.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Operations Administrative Assistant &mdash; Specialty Coating Systems</h3>
+    <p class="meta">Austin, TX &nbsp;|&nbsp; March 2020 – November 2021</p>
+    <ul>
+      <li>Designed an ERP-integrated Kanban inventory control system; reduced inventory costs by 20% and improved production efficiency by 15%.</li>
+      <li>Maintained document control for AS9100, ISO9001, and ITAR compliance; supported successful AS9100 certification.</li>
+      <li>Improved ERP and MRP data accuracy across inventory, procurement, and quality modules; increased reporting accuracy by 30%.</li>
+    </ul>
+  </div>
+
+  <div class="skill-cols">
+    <div class="skill-box">
+      <h4>ERP &amp; Platform</h4>
+      <ul>
+        <li>Infor CloudSuite Industrial / SyteLine 9/10</li>
+        <li>Factory Track</li>
+        <li>Infor OS &amp; GovCloud Portal</li>
+        <li>IDM Document Management</li>
+        <li>SSO / SCIM / ION</li>
+        <li>BarTender &amp; Print Gateway</li>
       </ul>
     </div>
-
-    <div class="card">
-      <h3>Operations &amp; Systems Analyst — Specialty Coating Systems (SCS)</h3>
-      <p class="muted">Austin, TX • 2020–2022</p>
-      <ul style="margin:6px 0 0 18px;">
-        <li>Supported ERP migration and inventory optimization for multi-product manufacturing lines.</li>
-        <li>Created standardized reports integrating cost, quality, and delivery metrics into a unified dashboard.</li>
-        <li>Partnered with cross-site teams to streamline production data flow between engineering and planning systems.</li>
+    <div class="skill-box">
+      <h4>Programming &amp; Data</h4>
+      <ul>
+        <li>VB.NET (form scripting)</li>
+        <li>SQL (ETL, reporting, analysis)</li>
+        <li>Python</li>
+        <li>Power BI &amp; Chart.js</li>
+        <li>Database Design &amp; Normalization</li>
+        <li>KPI Dashboard Development</li>
       </ul>
     </div>
-
-    <div class="card">
-      <h3>Business Operations Coordinator — Lowe’s Companies</h3>
-      <p class="muted">Austin, TX • 2016–2020</p>
-      <ul style="margin:6px 0 0 18px;">
-        <li>Oversaw vendor coordination and purchase order flow across multiple regional hubs.</li>
-        <li>Reduced material delays by 18% through workflow automation and exception tracking.</li>
-        <li>Trained new associates on system navigation and order management best practices.</li>
+    <div class="skill-box">
+      <h4>Consulting &amp; Delivery</h4>
+      <ul>
+        <li>Security Group Architecture</li>
+        <li>Multi-Site Engagement Management</li>
+        <li>End-User &amp; Admin Training</li>
+        <li>SOP &amp; Documentation Development</li>
+        <li>Root Cause Analysis</li>
+        <li>Infor Support Case Coordination</li>
+      </ul>
+    </div>
+    <div class="skill-box">
+      <h4>Tools</h4>
+      <ul>
+        <li>GitHub</li>
+        <li>Smartsheet</li>
+        <li>Zoho Desk</li>
+        <li>Microsoft 365 &amp; SharePoint</li>
+        <li>Fathom (meeting AI)</li>
+        <li>Zebra Printer Configuration</li>
       </ul>
     </div>
   </div>
 
-  <!-- SKILLS -->
-  <div class="skills-layout" style="margin-bottom: 28px;">
-    <aside class="skills-column" style="flex:1 1 45%; background:#f8fbff; border:1.5px solid var(--line);">
-      <div class="skill-card">
-        <h4>💡 Core Skills</h4>
-        <ul>
-          <li>ERP Systems (Infor SyteLine, Factory Track, QMS)</li>
-          <li>Program &amp; Operations Management</li>
-          <li>Data Analysis &amp; KPI Reporting</li>
-          <li>Cross-Functional Leadership</li>
-          <li>Process Improvement (Lean / RCCA)</li>
-        </ul>
-      </div>
-    </aside>
-
-    <aside class="skills-column" style="flex:1 1 45%; background:#f8fbff; border:1.5px solid var(--line);">
-      <div class="skill-card">
-        <h4>🧩 Technical Strengths</h4>
-        <ul>
-          <li>SQL • Python • Power BI • Chart.js</li>
-          <li>Forecast Modeling &amp; Data Visualization</li>
-          <li>Database Design &amp; Normalization</li>
-          <li>Documentation &amp; SOP Development</li>
-          <li>Predictive Analytics &amp; Machine Learning Concepts</li>
-        </ul>
-      </div>
-    </aside>
-  </div>
-
-  <!-- RESUME PDF LINK -->
-  <div class="resume-card" style="margin-top:18px; text-align:center;">
-    <h3>📄 Download Full Resume (PDF)</h3>
-    <p class="muted">GitHub • Updated October 2025</p>
-    <a href="https://raw.githubusercontent.com/LaurenRyman/portfolio/main/Resume_Lryman2.pdf"
-       target="_blank" style="font-weight:600;color:var(--blue);text-decoration:underline;">
-       Click to Download Resume (PDF)
-    </a>
+  <div class="resume-card" style="margin-top:24px;background:rgba(255,255,255,.05);border:1.5px dashed rgba(255,255,255,.2);border-radius:10px;padding:18px;text-align:center;">
+    <h3 style="color:#a4c2ff;margin-top:0;">Download Full Resume (PDF)</h3>
+    <p style="color:#6a7f99;font-size:.9rem;">Updated 2026</p>
+    <a href="https://raw.githubusercontent.com/LaurenRyman/portfolio/main/Resume_Lryman2.pdf" target="_blank" style="font-weight:600;color:#7ab8ff;text-decoration:underline;">Click to Download Resume (PDF)</a>
   </div>
 </section>
 
-
+<!-- EDUCATION -->
 <section id="education" class="section">
-  <h2>Education & Certifications</h2>
+  <h2>Education &amp; Certifications</h2>
   <div class="edu-grid">
     <div class="edu-left">
       <div class="card">
-        <h3>B.S. in Computer Information Systems <span class="muted">(Data Analytics)</span></h3>
-        <p class="muted">Texas A&amp;M University–Central Texas • Dec 2023–Jul 2026 (expected)</p>
-        <ul><li>Database design & management; normalized relational modeling; SQL optimization.</li><li>Predictive analytics & BI; systems integration strategy.</li><li>Applied ML concepts for operations and decision support.</li></ul>
+        <h3>B.S. Computer Information Systems <span class="muted">– Data Analytics</span></h3>
+        <p class="muted">Texas A&amp;M University – Central Texas &nbsp;|&nbsp; 2026</p>
+        <p style="margin:4px 0 10px;">
+          <span style="background:#eaf1fb;border:1px solid #bcd0ea;color:#162236;padding:3px 10px;border-radius:4px;font-size:13px;font-weight:600;margin-right:6px;">&#127941; Summa Cum Laude</span>
+          <span style="background:#eaf1fb;border:1px solid #bcd0ea;color:#162236;padding:3px 10px;border-radius:4px;font-size:13px;font-weight:600;">&#127775; President's List 2025–2026</span>
+        </p>
+        <ul>
+          <li>Database design &amp; management; normalized relational modeling; SQL optimization.</li>
+          <li>Predictive analytics &amp; BI; systems integration strategy.</li>
+          <li>Applied ML concepts for operations and decision support.</li>
+          <li>Web development, network architecture, security, systems analysis &amp; design.</li>
+        </ul>
       </div>
       <div class="card">
         <h3>Associate of Arts</h3>
-        <p class="muted">Austin Community College • Mar 2020–Dec 2022</p>
+        <p class="muted">Austin Community College &nbsp;|&nbsp; December 2022</p>
         <ul><li>Foundations in programming, management, and strategy.</li></ul>
       </div>
     </div>
     <aside class="edu-right">
       <div class="cert-card">
-        <img src="https://i.imgur.com/5KsA2ie.jpg" alt="Ethical Hacking: Wireless Networks — LinkedIn Learning" style="width:100%;border-radius:10px;">
-        <p class="muted" style="margin-top:10px;text-align:center;">LinkedIn Learning • Completed June 29, 2025</p>
+        <img src="https://i.imgur.com/5KsA2ie.jpg" alt="Ethical Hacking: Wireless Networks" style="width:100%;border-radius:10px;">
+        <p class="muted" style="margin-top:10px;text-align:center;">LinkedIn Learning &nbsp;|&nbsp; Completed June 2025</p>
       </div>
     </aside>
   </div>
   <div class="resume-card">
-    <h3>📄 Download Full Resume (PDF)</h3>
-    <p class="muted">GitHub • Updated October 2025</p>
+    <h3>Download Full Resume (PDF)</h3>
+    <p class="muted">Updated 2026</p>
     <a href="https://raw.githubusercontent.com/LaurenRyman/portfolio/main/Resume_Lryman2.pdf" target="_blank" style="font-weight:600;color:var(--blue);text-decoration:underline;">Click to Download Resume (PDF)</a>
   </div>
 </section>
-<!-- WORK SAMPLES -->
-<section id="work-samples" class="section" role="region" aria-labelledby="h-work">
-  <h2 id="h-work">Projects &amp; Work Samples</h2>
 
-  <div class="certificate-container card" style="background:#f8fafc; border-color:#d0e3f3; padding:24px;">
-    <h3 style="margin-bottom:12px; color:#1a2332;">Manufacturing Process Dashboard</h3>
-    <p class="muted" style="margin-bottom:14px;">
-      <strong>Role:</strong> Program Manager &amp; Analytics Lead • <strong>Focus:</strong> Workflow visibility &amp; ERP integration
-    </p>
-    <img src="https://i.imgur.com/6oUYlYb.png" alt="Manufacturing Process Dashboard Preview"
-         style="width:100%; max-width:900px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:16px;">
-    <div style="text-align:left;">
-      <h4 style="color:#1a2332;">Business Impact</h4>
-      <ul style="padding-left:25px; margin-bottom:12px;">
-        <li>−60% weekly reporting cycle via automation and validation.</li>
-        <li>Surfaced 47 critical job bottlenecks for proactive resolution.</li>
-        <li>Unified OTD, shortages, PPV, cost roll status in one view.</li>
-      </ul>
-      <h4 style="color:#1a2332;">Technical Implementation</h4>
-      <ul style="padding-left:25px;">
-        <li>SQL ETL pipelines from Infor SyteLine to SharePoint Lists.</li>
-        <li>Automated refresh logic with error handling and QA checks.</li>
-        <li>Role-based dashboards; mobile-friendly access.</li>
-      </ul>
-    </div>
+<!-- WORK SAMPLES -->
+<section id="work-samples" class="section dark-section" role="region" aria-labelledby="h-work">
+  <h2 id="h-work">Projects &amp; Work Samples</h2>
+  <div class="project-card">
+    <h3>Manufacturing Process Dashboard</h3>
+    <p class="meta">Role: Program Manager &amp; Analytics Lead &nbsp;|&nbsp; Focus: Workflow visibility &amp; ERP integration</p>
+    <img src="https://i.imgur.com/6oUYlYb.png" alt="Manufacturing Process Dashboard">
+    <h4>Business Impact</h4>
+    <ul>
+      <li>60% reduction in weekly reporting cycle via automation and validation.</li>
+      <li>Surfaced 47 critical job bottlenecks for proactive resolution.</li>
+      <li>Unified OTD, shortages, PPV, and cost roll status in a single view.</li>
+    </ul>
+    <h4>Technical Implementation</h4>
+    <ul>
+      <li>SQL ETL pipelines from Infor SyteLine to SharePoint Lists.</li>
+      <li>Automated refresh logic with error handling and QA checks.</li>
+      <li>Role-based dashboards with mobile-friendly access.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CSS PROPERTIES -->
+<section id="css-props" class="section" role="region" aria-labelledby="h-css">
+  <h2 id="h-css">CSS Properties</h2>
+  <div class="css-props-section">
+    <h1>CSS Properties</h1>
+    <p>A few CSS properties commonly used to format and style text on web pages:</p>
+    <ul>
+      <li><strong>font-family</strong> — Sets the typeface used to display text. You can list multiple fonts as a fallback chain, such as Arial, Helvetica, or sans-serif.</li>
+      <li class="favorite"><strong>color</strong> — Controls the foreground color of text. Accepts named colors, hex values, RGB, and more. This is my favorite property because it has the biggest visual impact with the least amount of code.</li>
+      <li><strong>font-size</strong> — Defines the size of the text. Can be set in pixels, ems, rems, or percentages.</li>
+      <li><strong>font-weight</strong> — Sets how thick or thin the text appears, such as normal, bold, or a numeric value like 600.</li>
+      <li><strong>text-transform</strong> — Controls capitalization of text, with values like uppercase, lowercase, and capitalize.</li>
+    </ul>
+    <p>Questions? <a href="mailto:rymanlm@gmail.com">Email me</a></p>
   </div>
 </section>
 
@@ -546,59 +440,52 @@ h3{font-size:20px;color:#2a3443;margin:20px 0 10px;}
   <div class="grid">
     <div class="card">
       <h3>Sherry Jolly</h3>
-      <p class="muted">Director of Materials • VirTex Enterprises</p>
+      <p class="muted">Director of Materials &nbsp;|&nbsp; VirTex Enterprises</p>
       <p class="muted"><a class="muted" href="mailto:Sherry.Jolly@virtex.us">Sherry.Jolly@virtex.us</a></p>
     </div>
     <div class="card">
       <h3>James Knox</h3>
-      <p class="muted">Director of Sales • Specialty Coating Systems Americas</p>
+      <p class="muted">Director of Sales &nbsp;|&nbsp; Specialty Coating Systems Americas</p>
       <p class="muted"><a class="muted" href="mailto:JKnox@scscoatings.com">JKnox@scscoatings.com</a></p>
     </div>
     <div class="card">
       <h3>Jesse Ganz</h3>
-      <p class="muted">Director of Operations • VirTex Enterprises</p>
+      <p class="muted">Director of Operations &nbsp;|&nbsp; VirTex Enterprises</p>
       <p class="muted"><a class="muted" href="mailto:Jesse.Ganz@virtex.us">Jesse.Ganz@virtex.us</a></p>
     </div>
   </div>
 </section>
 
 <!-- LETTERS -->
-<section id="letters" class="section" role="region" aria-labelledby="h-letters" style="padding:44px 40px; max-width:1100px; margin:0 auto;">
+<section id="letters" class="section" role="region" aria-labelledby="h-letters">
   <h2 id="h-letters">Letters of Recommendation</h2>
-  <div class="certificate-container card" style="page-break-after:always; background:#f8fafc; border-color:#d0e3f3; text-align:center;">
-    <img src="https://i.imgur.com/kcgTkw3.png" alt="Letter of Recommendation — James Knox"
-         style="width:100%; max-width:850px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:12px;">
+  <div class="card" style="background:#f8fafc;border-color:#d0e3f3;text-align:center;margin-bottom:16px;">
+    <img src="https://i.imgur.com/kcgTkw3.png" alt="Letter of Recommendation — James Knox" style="width:100%;max-width:850px;height:auto;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.15);">
   </div>
-  <div class="certificate-container card" style="page-break-after:always; background:#f8fafc; border-color:#d0e3f3; text-align:center;">
-    <img src="https://i.imgur.com/4e6ZLkt.png" alt="Team Feedback — Jayme Bourassa"
-         style="width:100%; max-width:850px; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:12px;">
+  <div class="card" style="background:#f8fafc;border-color:#d0e3f3;text-align:center;">
+    <img src="https://i.imgur.com/4e6ZLkt.png" alt="Team Feedback — Jayme Bourassa" style="width:100%;max-width:850px;height:auto;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.15);">
   </div>
 </section>
 
+</main>
+
 <footer class="footer">
   <p><strong>Lauren Ryman</strong></p>
-  <p>Program Manager • ERP Specialist • Supply Chain Optimization</p>
-<p>📧 <a href="mailto:rymanlm@gmail.com" style="color:#e9f1fb;text-decoration:underline;">rymanlm@gmail.com</a></p>
-<p>💼 <a href="https://www.linkedin.com/in/laurenryman" target="_blank" style="color:#e9f1fb;text-decoration:underline;">linkedin.com/in/laurenryman</a></p>
-<p>© 2025 Lauren Ryman. All rights reserved.</p>
+  <p>CSI Technical Consultant &nbsp;|&nbsp; CloudSuite Industrial &nbsp;|&nbsp; WM Synergy</p>
+  <p>&#128231; <a href="mailto:rymanlm@gmail.com">rymanlm@gmail.com</a> &nbsp;|&nbsp; &#128188; <a href="https://www.linkedin.com/in/laurenryman" target="_blank">linkedin.com/in/laurenryman</a></p>
+  <p style="margin-top:10px;font-size:.85rem;color:#4a5a6a;">&copy; 2026 Lauren Ryman. All rights reserved.</p>
 </footer>
 
 <script>
   function showSection(id) {
-    const sections = document.querySelectorAll('.section');
-    const buttons = document.querySelectorAll('.nav button');
-    sections.forEach(section => {
-      section.classList.remove('active');
-    });
-    buttons.forEach(btn => {
-      btn.classList.remove('active');
-    });
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
 
-</div> <!-- end container -->
+</div>
 </body>
 </html>
