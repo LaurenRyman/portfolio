@@ -185,10 +185,66 @@
   footer a:hover { text-decoration: underline; }
 
   @media (max-width: 860px) {
-    .split { grid-template-columns: 1fr; }
-    .split-image { height: 60vw; }
-    .split-copy { padding: 48px 28px; }
-    .fade-right::after, .fade-left::after { background: none; }
+    .hero {
+      min-height: unset;
+      height: 100svh;
+      padding: 0 24px 40px;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .hero-photo {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 0;
+    }
+
+    .hero h1 { font-size: 2.8rem; margin-bottom: 0; }
+    .hero-sub { font-size: 0.72rem; margin-bottom: 0; }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      transform: none;
+    }
+
+    .split { grid-template-columns: 1fr; min-height: unset; }
+
+    .split-image {
+      height: 100vw;
+      max-height: 500px;
+      position: sticky;
+      top: 0;
+      z-index: 0;
+    }
+
+    .split-image img { object-position: center center; }
+    .about .split-image img { object-position: center top; }
+    .travel .split-image { height: 120vw; max-height: 600px; }
+    .travel .split-image img { object-position: center 30%; }
+    .singing .split-image { height: 120vw; max-height: 600px; }
+    .singing .split-image img { object-position: center 25%; }
+
+    .split-copy {
+      position: relative;
+      z-index: 1;
+      padding: 36px 24px 48px;
+      justify-content: flex-start;
+      margin-top: -120px;
+    }
+
+    .split-copy h2 { font-size: 1.8rem; }
+    .split-copy p { font-size: 0.97rem; }
+
+    .fade-right::after {
+      background: linear-gradient(to bottom, transparent 35%, var(--section-bg, #0d0d14) 75%);
+    }
+    .fade-left::after {
+      background: linear-gradient(to bottom, transparent 35%, var(--section-bg, #0d0d14) 75%);
+    }
   }
 </style>
 </head>
