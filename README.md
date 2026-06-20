@@ -1,34 +1,31 @@
-# Lauren Ryman — Professional Portfolio
+Here is the updated README:
 
-Welcome to my portfolio!  
-I’m a **Program Manager and ERP specialist** with a focus on data-driven operations, system optimization, and process improvement.  
+Lauren Ryman
+A personal website about me -- mom, ERP consultant, student, and someone who is always three tabs deep into something new.
 
-This site brings together my experience in **electronics manufacturing**, my ongoing **Computer Information Systems degree (Data Analytics)** at Texas A&M University–Central Texas, and my approach to leadership — blending strategy, communication, and technical insight.  
+What's Inside
 
----
+About -- Who I am and what I do
+Jamie -- My favorite person
+Traveling -- Places we have been and where we are going next
+Inspiration -- My dad walked the stage at 62 and changed how I think about finishing things
+Shows -- Concerts and Broadway, usually with my mom
+Singing -- I perform too, always have
+The Pets -- Sunday, Moose, and Pippin
+Learning -- Always three tabs deep
 
-## What's Inside
-- **Career Summary & Goals** — What drives my work and where I’m headed  
-- **Philosophy** — My approach to leadership and problem-solving  
-- **Skills & Experience** — Core strengths and professional background  
-- **Education & Certifications** — Academic progress and verified credentials  
-- **Work Samples** — ERP dashboards, reporting automation, and analytics projects  
-- **References & Letters** — Endorsements from leaders and peers  
 
----
+Tech Details
 
-## Tech Details
-- Built with **HTML, CSS, and JS**
-- Designed for **readability, print export, and mobile viewing**
-- Hosted through **GitHub Pages**
+Built with HTML, CSS, and vanilla JS
+Full-bleed split layout with per-section color themes
+Responsive with mobile-optimized sticky photo parallax
+Hosted on GitHub Pages
 
----
 
-## Contact
-📧 [rymanlm@gmail.com](mailto:rymanlm@gmail.com)  
-💼 [linkedin.com/in/laurenryman](https://www.linkedin.com/in/laurenryman)  
-📍 Austin, TX  
+Contact
+📧 rymanlm@gmail.com
 
----
+💼 linkedin.com/in/laurenryman
 
-> “Transparency builds trust. Measure what matters. Improve continuously.”
+📍 Austin area, TX
