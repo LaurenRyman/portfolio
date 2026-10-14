@@ -1,31 +1,26 @@
-Here is the updated README:
+# Lauren Ryman
 
-Lauren Ryman
-A personal website about me -- mom, ERP consultant, student, and someone who is always three tabs deep into something new.
+Personal and professional site for Lauren Ryman, ERP technical consultant in the Austin, TX area.
 
-What's Inside
+Live site: https://laurenryman.github.io/portfolio/
 
-About -- Who I am and what I do
-Jamie -- My favorite person
-Traveling -- Places we have been and where we are going next
-Inspiration -- My dad walked the stage at 62 and changed how I think about finishing things
-Shows -- Concerts and Broadway, usually with my mom
-Singing -- I perform too, always have
-The Pets -- Sunday, Moose, and Pippin
-Learning -- Always three tabs deep
+## What's inside
 
+- About: who I am and what I do
+- Experience: WM Synergy, VirTex Enterprises, Specialty Coating Systems
+- Projects: capstone React app, Security Discovery Kit, manufacturing dashboard, networking and security coursework, VB.NET apps
+- Education and Skills: B.S. in Computer Information Systems, Texas A&M University-Central Texas, August 2026, Summa Cum Laude
+- Outside of work: Jamie, travel, family, shows, singing, pets, learning
 
-Tech Details
+## Tech details
 
-Built with HTML, CSS, and vanilla JS
-Full-bleed split layout with per-section color themes
-Responsive with mobile-optimized sticky photo parallax
-Hosted on GitHub Pages
+- Built with HTML and CSS
+- Full-bleed split layout with per-section color themes
+- Responsive, with a sticky photo layout on mobile
+- Hosted on GitHub Pages
 
+## Contact
 
-Contact
-📧 rymanlm@gmail.com
-
-💼 linkedin.com/in/laurenryman
-
-📍 Austin area, TX
+- Email: rymanlm@gmail.com
+- LinkedIn: https://www.linkedin.com/in/lauren-ryman-39839a129
+- Resume: [Resume_Ryman_2026.pdf](Resume_Ryman_2026.pdf)
