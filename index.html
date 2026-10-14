@@ -342,7 +342,9 @@
         <li>Designed a multi-site security group architecture spanning nine sites across CloudSuite Industrial and Factory Track, with permission matrices and architecture diagrams.</li>
         <li>Analyzed a 5,987-object authorization export to build role-based security groups, then turned the process into a reusable Security Discovery Kit for new engagements.</li>
         <li>Write and debug VB.NET Factory Track form scripts for order and item label printing; configure BarTender and Print Gateway.</li>
-        <li>Diagnosed a DMARC/DKIM email deliverability failure in a vendor-hosted mail relay and coordinated the fix across vendors.</li>
+        <li>Traced a time-clock lockout to a deadlock in the vendor's stored procedures using SQL Server Extended Events; the vendor's fix stopped it across 3 databases.</li>
+        <li>Diagnosed SAML single sign-on, ION message replication, and DMARC/DKIM email failures down to the failing component, then escalated with evidence.</li>
+        <li>Merge monthly vendor updates into custom VB.NET form scripts for 11 cloud customers.</li>
       </ul>
     </div>
 
@@ -374,16 +376,46 @@
     <h2>Things I have built.</h2>
     <div class="pro-grid">
       <div class="card">
-        <h3>Exam Prep Flashcard App</h3>
-        <p class="meta">Capstone, Summer 2026</p>
-        <p>A React web app for capstone exam review covering ethics, information security law, software engineering, IS strategy, and project management.</p>
-        <div class="tags"><span>React</span><span>JavaScript</span></div>
+        <h3>SQL Deadlock Root Cause</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>Employees were randomly locked out of clocking in. I ruled out user error with read-only queries, then pulled the deadlock graph from SQL Server Extended Events and proved the vendor's own stored procedures were deadlocking under parallel plans. The vendor's fix stopped the deadlocks across 3 databases.</p>
+        <div class="tags"><span>T-SQL</span><span>Extended Events</span><span>SSMS</span></div>
+      </div>
+      <div class="card">
+        <h3>SAML SSO Failure on Kiosks</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>Shop-floor kiosks could not sign in to one environment. A network trace showed the SAML endpoint returning HTTP 500. I decoded the assertion, found required claims missing under just-in-time provisioning, and traced the fault to identity configuration, not application permissions.</p>
+        <div class="tags"><span>SAML 2.0</span><span>Entra ID</span><span>Infor OS</span></div>
+      </div>
+      <div class="card">
+        <h3>Per-Site Document Routing</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>Wrote XQuery saved searches that union two document types and filter by user and site, so production staff at a 7-plant manufacturer see only their own job packets. Built 13 searches across 5 site folders with automatic archiving.</p>
+        <div class="tags"><span>XQuery</span><span>Infor IDM</span></div>
+      </div>
+      <div class="card">
+        <h3>Scripted Printer Provisioning</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>PowerShell scripts that test TCP reachability, install drivers, create ports and queues, detect resolution, and send test labels, so customer IT could set up remote label printers in one pass. Also wrote a network scan that finds printers through Zebra SGD queries.</p>
+        <div class="tags"><span>PowerShell</span><span>Zebra SGD</span><span>Windows</span></div>
+      </div>
+      <div class="card">
+        <h3>Dynamic Label Integration</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>Rebuilt a label integration that reads CSV trigger files with 200+ columns, loops through each record, and picks the label template from a field value. Includes conditional printing of 5 icons.</p>
+        <div class="tags"><span>BarTender</span><span>CSV</span><span>Integration</span></div>
+      </div>
+      <div class="card">
+        <h3>Factory Track Label Forms</h3>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>Specified and built mobile label forms with transfer order support through an IDO extension and box-quantity logic: label count is the ceiling of quantity over box size, with the remainder on the last box.</p>
+        <div class="tags"><span>Mongoose</span><span>IDO</span><span>VB.NET</span></div>
       </div>
       <div class="card">
         <h3>Security Discovery Kit</h3>
-        <p class="meta">WM Synergy, 2026</p>
-        <p>A reusable workbook for scoping ERP security engagements, built from analyzing thousands of authorization objects into role-based groups.</p>
-        <div class="tags"><span>Workbook</span><span>RBAC</span><span>Infor OS</span></div>
+        <p class="meta">ERP consulting, 2026</p>
+        <p>A reusable workbook for scoping ERP security engagements, built from analyzing a 5,987-object authorization export into role-based groups.</p>
+        <div class="tags"><span>RBAC</span><span>Infor OS</span><span>Excel</span></div>
       </div>
       <div class="card">
         <h3>Manufacturing Process Dashboard</h3>
@@ -392,22 +424,10 @@
         <div class="tags"><span>SQL</span><span>SyteLine</span><span>SharePoint</span></div>
       </div>
       <div class="card">
-        <h3>Network Protocol Analysis</h3>
-        <p class="meta">Computer Networks (COSC 4378)</p>
-        <p>Captured and analyzed packet traces to study TCP connection setup, reliability, and congestion behavior, plus DNS query structure.</p>
-        <div class="tags"><span>Wireshark</span><span>TCP/IP</span><span>DNS</span></div>
-      </div>
-      <div class="card">
-        <h3>Windows 11 Hardening Report</h3>
-        <p class="meta">Computer Security (CIS 4342)</p>
-        <p>Evaluated Windows 11 security configuration and documented a hardening baseline with recommended controls.</p>
-        <div class="tags"><span>Security</span><span>Windows</span></div>
-      </div>
-      <div class="card">
-        <h3>Windows Forms Applications</h3>
-        <p class="meta">Visual Basic Programming (CIS 3331)</p>
-        <p>Event-driven desktop apps including a conference registration system, a shopping cart, and an array processing tool.</p>
-        <div class="tags"><span>VB.NET</span><span>.NET 10</span></div>
+        <h3>Exam Prep Flashcard App</h3>
+        <p class="meta">Capstone, Summer 2026</p>
+        <p>A React web app for capstone exam review covering ethics, information security law, software engineering, IS strategy, and project management.</p>
+        <div class="tags"><span>React</span><span>JavaScript</span></div>
       </div>
     </div>
   </div>
